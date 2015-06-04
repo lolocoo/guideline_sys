@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font: 12px/1.6 microsoft yahei, arial;
+    color: #333;
+}
+ul {
+    list-style-type: none;
+}
+.wrap {
+    min-height: 100%;
+    background: #e8eaeb;
+}
+.container {
+    padding: 20px;
+}
+.container-inner {
+    overflow: hidden;
+}
+.main-nav {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: -5000px;
+    padding-bottom: 5000px;
+    width: 240px;
+    background: #f5f6f7;
+
+}
+.main-nav a {
+    color: #333;
+    text-decoration: none;
+
+}
+.main-nav > ul > li {
+    min-height: 35px;
+    border-bottom: 1px solid #edf0f0;
+}
+.main-nav > ul > li > a {
+    display: block;
+    height: 40px;
+    text-indent: 30px;
+    font-size: 14px;
+    line-height: 40px;
+}
+.main-nav > ul > li > a:hover {
+    box-shadow: -1px 0 0px 1px #dce3f5;
+    background: #ebf0f6 url(../img/sprite.png) 192px -48px no-repeat;
+}
+.main-nav > ul > li.is-select > a {
+    box-shadow: 3px 0 0  #394e80 inset;
+    background: #fff;
+}
+.main-nav > ul > li > ul {
+    display: none;
+    padding: 10px 0 10px 30px;
+}
+.main-nav > ul > li > ul > li.is-select-sub > a {
+    background: url(../img/sprite.png) -2px 12px no-repeat;
+}
+.main-nav > ul > li > ul > li > a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 20px;
+}
+.main-content {
+    margin-bottom: -5000px;
+    padding-bottom: 5000px;
+    background: #fff;
+    overflow: hidden;
+}
+.header {
+    padding: 15px 20px;
+    height: 70px;
+    background: #394e80;
+}
+.brand-logo {
+    width: 150px;
+    height: 70px;
+    background: url(../img/logo.png)  0 0 no-repeat; 
+}
+.header-tab {
+    padding: 0 30px;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    background: #f5f6f7;
+}
+.header-tab h2 {
+    display: inline;
+    font-size: 24px;
+    line-height: 55px;
+    font-weight: normal;
+}
+.header-tab ul {
+    float: right;
+    list-style-type: none;
+    position: relative;
+    top: 11px;
+    zoom: 1;
+}
+.header-tab ul li {
+    float: left;
+}
+.header-tab ul li.is-select a {
+    box-shadow: 0 -3px 0 #394e80;
+    background: #fff;
+}
+.header-tab ul li a {
+    display: block;
+    width: 90px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    
+}
+.main-content-body {
+    padding: 30px;
+}

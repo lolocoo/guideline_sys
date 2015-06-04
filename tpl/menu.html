@@ -1,0 +1,18 @@
+<% _.each(menudata, function(val, key) { %>
+    <% if(key !== 'pagedata') { %>
+        <li <% if(menudata['pagedata']['tag']===key){%> class="is-select"<% }%>>
+            <a class="main-nav-item" href="#/<%= key %>"><%= menudata[key]['title'] %></a>
+            <% if(menudata[key]['sub'].length){ %>
+                <ul <% if(menudata['pagedata']['tag']===key){%> style="display:block;"<% }%>>
+                    <% _.each(menudata[key]['sub'], function(elm, index){ %>
+                        <li <% if(menudata['pagedata']['tag']===key && menudata['pagedata']['index'] == index){%> class="is-select-sub" <% }%>>
+                            <a href="#/<%= key %>/<%= index %>">
+                                <%= elm %>
+                            </a>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } %>
+        </li>
+    <% } %>
+<% }); %>
